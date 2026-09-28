@@ -16,6 +16,8 @@ import java.util.List;
 @RequiredArgsConstructor
 public class ProdutosControler {
 
+    private final ProdutosService produtosService;
+
     @GetMapping("/listar")
     public ResponseEntity<List<Produtos>> listar(Produtos produto){
         List<Produtos> produtos = new ArrayList<>();
