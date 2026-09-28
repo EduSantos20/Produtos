@@ -12,7 +12,7 @@ import lombok.NoArgsConstructor;
 @Data
 public class Produtos {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.UUID)
     private int id;
     private String nome;
     private String descricao;
